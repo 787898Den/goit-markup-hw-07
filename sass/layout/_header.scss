@@ -1,0 +1,14 @@
+.header {
+  background-color: var(--second-text-color);
+  border-bottom: solid 1px var(--border-color);
+  position: fixed;
+  min-height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}

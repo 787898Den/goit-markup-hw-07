@@ -1,0 +1,135 @@
+:root {
+  --primary-text-color: #757575;
+  --second-text-color: #ffffff;
+  --primary-title-color: #212121;
+  --accent-color: #2196f3;
+  --third-text-color: rgba(255, 255, 255, 0.6);
+  --fourth-text-color: #f5f4fa;
+  --background-color-footer: #2f303a;
+  --border-color: #ececec;
+  --icons-fill: #afb1b8;
+  --footer-background-color-icons: rgba(255, 255, 255, 0.1);
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-section {
+  padding-bottom: 94px;
+}
+
+.team-section {
+  background-color: var(--fourth-text-color);
+}
+
+.modal-button {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  fill: var(--accent-color);
+}
+
+.social-links {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: var(--icons-fill);
+  transition: color 250ms var(--transition-timing);
+}
+
+.social-links:focus,
+.social-links:hover {
+  background-color: var(--accent-color);
+  color: var(--second-text-color);
+  transition: 250ms var(--transition-timing);
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item {
+  list-style: none;
+  margin-right: 10px;
+}
+
+.social-item:last-child {
+  margin-right: 0px;
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.2);
+  transition: visibility 500ms var(--transition-timing), opacity 1000ms var(--transition-timing);
+  z-index: 5;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.1) rotate(180deg);
+  transition: transform 500ms var(--transition-timing);
+}
+
+.header {
+  background-color: var(--second-text-color);
+  border-bottom: solid 1px var(--border-color);
+  position: fixed;
+  min-height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.header-nav {
+  display: flex;
+}
+/*# sourceMappingURL=main.css.map */
