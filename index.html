@@ -21,47 +21,50 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <nav class="header-nav">
-          <a class="logo-link link header-logo" href=""
-            >Web<span class="studio-dark">Studio</span>
+        <main-nav class="main-nav">
+          <a class="logo-link link logo-header" href=""
+            >Web<span class="logo-header-dark-wrap">Studio</span>
           </a>
-          <ul class="list menu-list">
-            <li class="menu-item">
+          <ul class="list main-nav-list">
+            <li class="main-nav_item">
               <a
-                class="menu-link link current header-link"
+                class="main-nav_link current link header_link"
                 href="index.html"
                 rel="index"
                 >Студия</a
               >
             </li>
-            <li class="menu-item">
-              <a class="menu-link link header-link" href="portfolio.html"
+            <li class="main-nav_item">
+              <a class="main-nav_link link header_link" href="portfolio.html"
                 >Портфолио</a
               >
             </li>
-            <li class="menu-item">
-              <a class="menu-link link header-link" href="#contacts"
+            <li class="main-nav_item">
+              <a class="main-nav_link link header_link" href="#contacts"
                 >Контакты</a
               >
             </li>
           </ul>
-        </nav>
-        <ul class="list menu-list-connect">
-          <li class="menu-item">
-            <a class="menu-link link header-contact header-link" href="mail-to">
-              <svg class="contacts-icon" width="16" height="12">
+        </main-nav>
+        <ul class="list main-nav_list-connect">
+          <li class="main-nav_item">
+            <a
+              class="main-nav_link link header-contact header_link"
+              href="mail-to"
+            >
+              <svg class="list-connect_contacts-icon" width="16" height="12">
                 <use href="./image/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="menu-item">
+          <li class="main-nav_item">
             <a
-              class="menu-link link header-contact header-link"
+              class="main-nav_link link header-contact header_link"
               id="contacts"
               href="tel"
             >
-              <svg class="contacts-icon" width="10" height="16">
+              <svg class="list-connect_contacts-icon" width="10" height="16">
                 <use href="./image/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -83,51 +86,51 @@
       </section>
       <section class="section">
         <div class="container">
-          <ul class="hero-list list section-list">
-            <li class="section-item">
+          <ul class="hero-list list benefits-section">
+            <li class="benefits-item">
               <div class="benefits-icons">
                 <svg class="benefits-icon" width="70" height="70">
                   <use href="./image/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="hero-title-about">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-              <p class="about-text">
+              <h3 class="team-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+              <p class="benefits-text">
                 Идейные соображения,а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="section-item">
+            <li class="benefits-item">
               <div class="benefits-icons">
                 <svg class="benefits-icon" width="70" height="70">
                   <use href="./image/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="hero-title-about">ПУНКТУАЛЬНОСТЬ</h3>
-              <p class="about-text">
+              <h3 class="team-title">ПУНКТУАЛЬНОСТЬ</h3>
+              <p class="benefits-text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="section-item">
+            <li class="benefits-item">
               <div class="benefits-icons">
                 <svg class="benefits-icon" width="70" height="70">
                   <use href="./image/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="hero-title-about">ПЛАНИРОВАНИЕ</h3>
-              <p class="about-text">
+              <h3 class="team-title">ПЛАНИРОВАНИЕ</h3>
+              <p class="benefits-text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="section-item">
+            <li class="benefits-item">
               <div class="benefits-icons">
                 <svg class="benefits-icon" width="70" height="70">
                   <use href="./image/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="hero-title-about">СОВРЕМЕНЫЕ ТЕХНОЛОГИИ</h3>
-              <p class="about-text">
+              <h3 class="team-title">СОВРЕМЕНЫЕ ТЕХНОЛОГИИ</h3>
+              <p class="benefits-text">
                 Значимость этих проблем настолько очевидна , что реализация
                 плановых заданий.
               </p>
@@ -138,39 +141,39 @@
 
       <section class="auxiliary-section">
         <div class="container">
-          <h2 class="hero-title">Чем занимаемся</h2>
-          <ul class="list section-list">
-            <li class="img-item">
+          <h2 class="heading-title">Чем занимаемся</h2>
+          <ul class="list benefits-section">
+            <li class="auxiliary-item">
               <img
                 src="image/пишет-код.jpg"
                 alt="пишет-код"
                 width="370"
                 height="294"
               />
-              <div class="product-text-thumb">
-                <p class="product-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+              <div class="auxiliary-wrap">
+                <p class="auxiliary-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
               </div>
             </li>
-            <li class="img-item">
+            <li class="auxiliary-item">
               <img
                 src="image/семантика.jpg"
                 alt="семантика"
                 width="370"
                 height="294"
               />
-              <div class="product-text-thumb">
-                <p class="product-text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+              <div class="auxiliary-wrap">
+                <p class="auxiliary-text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
               </div>
             </li>
-            <li class="img-item">
+            <li class="auxiliary-item">
               <img
                 src="image/демонстрация-макета.jpg"
                 alt="демонстрация-макета"
                 width="370"
                 height="294"
               />
-              <div class="product-text-thumb">
-                <p class="product-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+              <div class="auxiliary-wrap">
+                <p class="auxiliary-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
               </div>
             </li>
           </ul>
@@ -179,13 +182,13 @@
 
       <section class="section team-section">
         <div class="container team-container">
-          <h2 class="hero-title team-title">Наша команда</h2>
-          <ul class="list section-list">
-            <li class="img-item-team">
+          <h2 class="heading-title">Наша команда</h2>
+          <ul class="list benefits-section">
+            <li class="team-item">
               <img src="image/фото-игорь.jpg" alt="фото-игорь" width="270" />
-              <div class="title-about">
-                <h3 class="hero-title-about">Игорь Демьяненко</h3>
-                <p class="about-text text-team">Product Designer</p>
+              <div class="team-item-wrap">
+                <h3 class="team-title">Игорь Демьяненко</h3>
+                <p class="team-text">Product Designer</p>
                 <ul class="social-list">
                   <li class="social-item">
                     <a href="" class="social-links">
@@ -218,11 +221,11 @@
                 </ul>
               </div>
             </li>
-            <li class="img-item-team">
+            <li class="team-item">
               <img src="image/фото-ольга.jpg" alt="фото-ольга" width="270" />
-              <div class="title-about">
-                <h3 class="hero-title-about">Ольга Репина</h3>
-                <p class="about-text text-team">Frontend Developer</p>
+              <div class="team-item-wrap">
+                <h3 class="team-title">Ольга Репина</h3>
+                <p class="team-text">Frontend Developer</p>
                 <ul class="team-social social-list">
                   <li class="social-item">
                     <a href="" class="social-links">
@@ -255,15 +258,15 @@
                 </ul>
               </div>
             </li>
-            <li class="img-item-team">
+            <li class="team-item">
               <img
                 src="image/фото-николай.jpg"
                 alt="фото-николай"
                 width="270"
               />
-              <div class="title-about">
-                <h3 class="hero-title-about">Николай Тарасов</h3>
-                <p class="about-text text-team">Marketing</p>
+              <div class="team-item-wrap">
+                <h3 class="team-title">Николай Тарасов</h3>
+                <p class="team-text">Marketing</p>
                 <ul class="team-social social-list">
                   <li class="social-item">
                     <a href="" class="social-links">
@@ -299,11 +302,11 @@
                 </ul>
               </div>
             </li>
-            <li class="img-item-team">
+            <li class="team-item">
               <img src="image/фото-михаил.jpg" alt="фото-михаил" width="270" />
-              <div class="title-about">
-                <h3 class="hero-title-about">Михаил Ермаков</h3>
-                <p class="about-text text-team">UI Designer</p>
+              <div class="team-item-wrap">
+                <h3 class="team-title">Михаил Ермаков</h3>
+                <p class="team-text">UI Designer</p>
                 <ul class="team-social social-list">
                   <li class="social-item">
                     <a href="" class="social-links">
@@ -393,7 +396,7 @@
       <div class="container common-container">
         <div class="footer-address">
           <a class="logo-link link footer-logo" href=""
-            >Web<span class="studio-light">Studio</span>
+            >Web<span class="logo-header-light-wrap">Studio</span>
           </a>
           <div class="footer-address-connect">
             <address class="footer-address-link">
@@ -401,12 +404,16 @@
             </address>
             <ul class="list footer-list">
               <li class="footer-item">
-                <a class="contact-link link" href="info@example.com"
+                <a
+                  class="footer-address_footer-address_contact-link link"
+                  href="info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li class="footer-item">
-                <a class="contact-link link" href="+380991111111"
+                <a
+                  class="footer-address_footer-address_contact-link link"
+                  href="+380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>

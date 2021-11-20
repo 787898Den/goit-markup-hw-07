@@ -14,3 +14,11 @@
   color: var(--second-text-color);
   transition: 250ms var(--transition-timing);
 }
+.social-links-icon {
+  color: var(--second-text-color);
+  transition: color 250ms var(--transition-timing);
+}
+.social-icon {
+  fill: currentColor;
+  transition: fill 250ms var(--transition-timing);
+}

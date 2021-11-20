@@ -8,7 +8,58 @@
   left: 0;
   z-index: 3;
 }
-.header-nav {
+.main-nav {
   display: flex;
   align-items: center;
+}
+.header_link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.main-nav-list {
+  display: flex;
+}
+
+.main-nav_item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.main-nav_list-connect {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.main-nav_link,
+.header-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-title-color);
+  display: flex;
+  align-items: center;
+  transition: color 250ms var(--transition-timing);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: color 250ms var(--transition-timing);
+  }
+}
+.header-contact {
+  display: flex;
+  color: var(--primary-text-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.list-connect_contacts-icon {
+  justify-content: center;
+  margin-right: 10px;
+  fill: currentColor;
 }
