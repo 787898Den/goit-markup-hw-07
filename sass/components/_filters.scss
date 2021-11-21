@@ -1,33 +1,31 @@
 .filters {
-  cursor: pointer;
   padding: 0px;
   border: none;
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.filters-button:not(:last-child) {
+.filters-button-item:not(:last-child) {
   margin-right: 8px;
 }
 .filters-button {
+  cursor: pointer;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-title-color);
   background-color: var(--fourth-text-color);
-  cursor: pointer;
   padding: 6px 22px;
   border-radius: 4px;
-  transition: color 250ms var(--transition-timing),
-    background-color 250ms var(--transition-timing),
-    box-shadow 250ms var(--transition-timing);
 }
 .filters-button:hover,
 .filters-button:focus {
   color: var(--fourth-text-color);
   background-color: var(--accent-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: color 250ms var(--transition-timing),
+    background-color 250ms var(--transition-timing),
+    box-shadow 250ms var(--transition-timing);
 }

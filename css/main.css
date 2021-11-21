@@ -67,7 +67,8 @@ button {
   position: fixed;
   top: 0;
   background: rgba(0, 0, 0, 0.2);
-  transition: visibility 500ms var(--transition-timing), opacity 1000ms var(--transition-timing);
+  transition: visibility 500ms var(--transition-timing),
+    opacity 1000ms var(--transition-timing);
   z-index: 5;
 }
 
@@ -105,7 +106,6 @@ button {
 }
 
 .filters {
-  cursor: pointer;
   padding: 0px;
   border: none;
   display: flex;
@@ -113,23 +113,21 @@ button {
   margin-bottom: 50px;
 }
 
-.filters-button:not(:last-child) {
+.filters-button-item:not(:last-child) {
   margin-right: 8px;
 }
 
 .filters-button {
+  cursor: pointer;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-title-color);
   background-color: var(--fourth-text-color);
-  cursor: pointer;
   padding: 6px 22px;
   border-radius: 4px;
-  transition: color 250ms var(--transition-timing), background-color 250ms var(--transition-timing), box-shadow 250ms var(--transition-timing);
 }
 
 .filters-button:hover,
@@ -137,6 +135,9 @@ button {
   color: var(--fourth-text-color);
   background-color: var(--accent-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: color 250ms var(--transition-timing),
+    background-color 250ms var(--transition-timing),
+    box-shadow 250ms var(--transition-timing);
 }
 
 .heading-title {
@@ -235,11 +236,13 @@ button {
   cursor: pointer;
   color: var(--second-text-color);
   background-color: var(--accent-color);
-  transition: background-color 250ms var(--transition-timing), color 250ms var(--transition-timing);
+  transition: background-color 250ms var(--transition-timing),
+    color 250ms var(--transition-timing);
 }
 
 .modal-form-button :focus {
-  transition: background-color 250ms var(--transition-timing), color 250ms var(--transition-timing);
+  transition: background-color 250ms var(--transition-timing),
+    color 250ms var(--transition-timing);
 }
 
 .modal-form-button:hover,
@@ -270,7 +273,8 @@ button {
 .modal-form-input:focus {
   outline: none;
   border-color: var(--accent-color);
-  transition: border-color 250ms var(--transition-timing), fill var(--accent-color) 250ms var(--transition-timing);
+  transition: border-color 250ms var(--transition-timing),
+    fill var(--accent-color) 250ms var(--transition-timing);
 }
 
 .modal-form-input:focus + .modal-form-input-icon {
@@ -311,7 +315,8 @@ button {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
-  transition: border-color 250ms var(--transition-timing), outline 250ms var(--transition-timing);
+  transition: border-color 250ms var(--transition-timing),
+    outline 250ms var(--transition-timing);
 }
 
 .modal-form-message::placeholder {
@@ -321,7 +326,8 @@ button {
 .modal-form-message:focus {
   outline: none;
   border-color: var(--accent-color);
-  transition: border-color 250ms var(--transition-timing), outline 250ms var(--transition-timing);
+  transition: border-color 250ms var(--transition-timing),
+    outline 250ms var(--transition-timing);
 }
 
 .modal-form-label-checkbox {
@@ -355,7 +361,8 @@ button {
   background-size: 16px 15px;
   background-repeat: no-repeat;
   background-position: center;
-  transition: background-image 250ms var(--transition-timing), border-color 250ms var(--transition-timing);
+  transition: background-image 250ms var(--transition-timing),
+    border-color 250ms var(--transition-timing);
 }
 
 .modal-form-checkbox:focus + .modal-form-label-checkbox::before {
@@ -380,7 +387,8 @@ button {
   transform: translate(-50%, -50%) scale(1) rotate(0deg);
   background-color: var(--second-text-color);
   border-radius: 4px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: transform 500ms var(--transition-timing);
 }
 
@@ -459,7 +467,8 @@ button {
 
 .project-link:hover,
 .project-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: color 250ms var(--transition-timing);
 }
 
@@ -805,7 +814,7 @@ button {
   align-items: center;
 }
 
-.header_link {
+.header__link {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -840,7 +849,8 @@ button {
   transition: color 250ms var(--transition-timing);
 }
 
-.main-nav_link:hover, .main-nav_link:focus,
+.main-nav_link:hover,
+.main-nav_link:focus,
 .header-contact:hover,
 .header-contact:focus {
   color: var(--accent-color);
@@ -852,7 +862,8 @@ button {
   color: var(--primary-text-color);
 }
 
-.header-contact:hover, .header-contact:focus {
+.header-contact:hover,
+.header-contact:focus {
   color: var(--accent-color);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -874,7 +885,11 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/рабочий-процесс.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/рабочий-процесс.jpg);
 }
 
 .hero-heading {
@@ -934,7 +949,8 @@ button {
   align-items: center;
   width: 270px;
   background-color: var(--second-text-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
